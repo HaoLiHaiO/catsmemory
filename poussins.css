@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#59c173, #a17fe0, #5d25c1);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 1300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tryagain {
+  visibility: hidden;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#samecard {
+  visibility: hidden;
+  color: yellow;
+}
+
+#congrats {
+  visibility: hidden;
+  color: linear-gradient(#f12711, #f5af19);
+}
