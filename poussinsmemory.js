@@ -115,9 +115,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function congratulations() {
     const congrats = document.getElementById("congrats");
     congrats.style.visibility = "visible";
-    setTimeout(() => {
-      congrats.style.visibility = "hidden";
-    }, 2000);
+  }
+
+  const againBtn = document.getElementById("playagain");
+  againBtn.addEventListener("click", playAgain);
+
+  function playAgain() {
+    while (board.lastChild) {
+      board.removeChild(board.lastChild);
+    }
+    boardIni();
+    congrats.style.visibility = "hidden";
+    displayScore.textContent = "";
   }
 
   // compare cards
@@ -151,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (foundCards.length === cardsArr.length / 2) {
       congratulations();
       displayScore.textContent = "Meow! You found all our pictures!";
+      foundCards.splice(0, foundCards.length);
     }
   }
 

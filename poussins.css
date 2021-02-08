@@ -51,5 +51,15 @@ h3 {
 
 #congrats {
   visibility: hidden;
-  color: linear-gradient(#f12711, #f5af19);
+  background: -webkit-linear-gradient(left, #ed213a, #93291e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#playagain {
+  cursor: pointer;
+  border: 1px solid greenyellow;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 10px;
 }
