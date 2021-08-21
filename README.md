@@ -12,3 +12,7 @@
 ## Fun fact
 
 - I call my cats 'poussins' which means 'chicks' 🐣🐤
+
+## Win Screen
+
+![Win Screen](./examples/win-screen.jpg)
